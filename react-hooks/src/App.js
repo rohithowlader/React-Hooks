@@ -1,7 +1,8 @@
 import "./App.css";
 import React from "react";
 import UseStateArray from "./component/UseStateArray";
-
+import BasicForm from "./component/Forms/BasicForm";
+import UseEffect1 from "./component/useEffect/UseEffect1";
 function App() {
   //const [name, setName] = useState(1);
   // const [name, setName] = useState("Rohit Howlader");
@@ -19,7 +20,8 @@ function App() {
           Click Me
         </button> */}
         {/* <RulesHook /> */}
-        <UseStateArray />
+
+        <UseEffect1 />
       </header>
     </div>
   );

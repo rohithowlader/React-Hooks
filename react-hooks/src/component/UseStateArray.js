@@ -18,6 +18,14 @@ function UseStateArray() {
     setMyArray([]);
   };
 
+  const removeElem = (id) => {
+    // alert(id);
+    const myNewArray = myArray.filter((currElm) => {
+      return currElm.id !== id;
+    });
+    setMyArray(myNewArray);
+  };
+
   return (
     <>
       {/* <h1>Name: Rohit & Age: 24</h1> */}
@@ -25,6 +33,7 @@ function UseStateArray() {
         return (
           <h1 key={currElm.id}>
             Name: {currElm.myName} & Age: {currElm.age}
+            <button onClick={() => removeElem(currElm.id)}>Remove</button>
           </h1>
         );
       })}
